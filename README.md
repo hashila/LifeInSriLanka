@@ -1,2 +1,0 @@
-# LifeInSriLanka
-a travelling website
