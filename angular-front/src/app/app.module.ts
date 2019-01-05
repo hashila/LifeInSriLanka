@@ -19,6 +19,7 @@ import { EditCharityPageComponent } from './components/edit-charity-page/edit-ch
 import { EditPackagesComponent } from './components/edit-packages/edit-packages.component';
 import { EditComponent } from './components/edit/edit.component';
 import { ShowCustomerDetailsComponent } from './components/show-customer-details/show-customer-details.component';
+import { EditContactDetailsComponent } from './components/edit-contact-details/edit-contact-details.component';
 
 @NgModule({
   declarations: [
@@ -38,7 +39,8 @@ import { ShowCustomerDetailsComponent } from './components/show-customer-details
     EditCharityPageComponent,
     EditPackagesComponent,
     EditComponent,
-    ShowCustomerDetailsComponent
+    ShowCustomerDetailsComponent,
+    EditContactDetailsComponent
   ],
   imports: [
     BrowserModule,
