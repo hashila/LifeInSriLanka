@@ -10,6 +10,15 @@ import { PackagespageComponent } from './components/packagespage/packagespage.co
 import { CharitypageComponent } from './components/charitypage/charitypage.component';
 import { AboutuspageComponent } from './components/aboutuspage/aboutuspage.component';
 import { DashboardComponent } from './components/dashboard/dashboard.component';
+import { FooterComponent } from './components/footer/footer.component';
+import { DesigningAreaComponent } from './components/designing-area/designing-area.component';
+import { TabsComponent } from './components/tabs/tabs.component';
+import { NewpostComponent } from './components/newpost/newpost.component';
+import { IndexPageEditComponent } from './components/index-page-edit/index-page-edit.component';
+import { EditCharityPageComponent } from './components/edit-charity-page/edit-charity-page.component';
+import { EditPackagesComponent } from './components/edit-packages/edit-packages.component';
+import { EditComponent } from './components/edit/edit.component';
+import { ShowCustomerDetailsComponent } from './components/show-customer-details/show-customer-details.component';
 
 @NgModule({
   declarations: [
@@ -20,7 +29,16 @@ import { DashboardComponent } from './components/dashboard/dashboard.component';
     PackagespageComponent,
     CharitypageComponent,
     AboutuspageComponent,
-    DashboardComponent
+    DashboardComponent,
+    FooterComponent,
+    DesigningAreaComponent,
+    TabsComponent,
+    NewpostComponent,
+    IndexPageEditComponent,
+    EditCharityPageComponent,
+    EditPackagesComponent,
+    EditComponent,
+    ShowCustomerDetailsComponent
   ],
   imports: [
     BrowserModule,
