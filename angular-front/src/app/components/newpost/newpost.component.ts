@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { AngularFireDatabase } from 'angularfire2/database';
 
 @Component({
   selector: 'app-newpost',
@@ -7,9 +8,23 @@ import { Component, OnInit } from '@angular/core';
 })
 export class NewpostComponent implements OnInit {
 
-  constructor() { }
+  titletxt:string;
+  bodytxt:string;
+
+  constructor(public db: AngularFireDatabase) { }
 
   ngOnInit() {
+  }
+
+  submitfunc(){
+
+    this.db.list('/newpost/'+this.titletxt).push({
+
+      Titletxt: this.titletxt,
+      bosytxt: this.bodytxt
+
+
+    });
   }
 
 }

@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { AngularFireDatabase } from 'angularfire2/database';
 
 @Component({
   selector: 'app-edit-contact-details',
@@ -7,9 +8,31 @@ import { Component, OnInit } from '@angular/core';
 })
 export class EditContactDetailsComponent implements OnInit {
 
-  constructor() { }
+
+  nametxt:string;
+  phonetxt:string;
+  emailtxt:string;
+  messagetxt:string;
+
+  constructor(public db: AngularFireDatabase) {
+
+  }
 
   ngOnInit() {
   }
+
+  submitfunc(){
+
+    console.log(this.nametxt+" "+this.phonetxt+" "+this.emailtxt+" "+this.messagetxt);
+    this.db.list('/userMessages/'+this.nametxt).push({
+
+      name: this.nametxt,
+      phonenum: this.phonetxt,
+      email: this.emailtxt,
+      message: this.messagetxt
+
+    });
+  }
+
 
 }
