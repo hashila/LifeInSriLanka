@@ -17,7 +17,16 @@
   },
   "homepage": "https://github.com/hashila/LifeInSriLanka#readme",
   "dependencies": {
+    "@angular/fire": "^5.1.1",
+    "angularfire2": "^5.1.1",
+    "body-parser": "^1.18.3",
+    "cors": "^2.8.5",
     "express": "^4.16.4",
-    "mongoose": "^5.3.14"
+    "firebase": "^5.8.4",
+    "jsonwebtoken": "^8.5.0",
+    "mongoose": "^5.3.14",
+    "passport": "^0.4.0",
+    "passport-jwt": "^4.0.0",
+    "rxjs": "^6.4.0"
   }
 }

@@ -1,5 +1,10 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
+import { FormsModule } from '@angular/forms';
+
+import { AngularFireModule } from 'angularfire2';
+import { AngularFireDatabaseModule } from 'angularfire2/database';
+import { RouterModule, Routes } from '@angular/router';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -20,8 +25,24 @@ import { EditPackagesComponent } from './components/edit-packages/edit-packages.
 import { ShowCustomerDetailsComponent } from './components/show-customer-details/show-customer-details.component';
 import { EditContactDetailsComponent } from './components/edit-contact-details/edit-contact-details.component';
 
+<<<<<<< HEAD
 
 
+=======
+const config = {
+    apiKey: "AIzaSyDBmn0NC7Qk1veMs0xlH2f8OmWT0MolciI",
+    authDomain: "lifeinsrilanka-4b91f.firebaseapp.com",
+    databaseURL: "https://lifeinsrilanka-4b91f.firebaseio.com",
+    projectId: "lifeinsrilanka-4b91f",
+    storageBucket: "lifeinsrilanka-4b91f.appspot.com",
+    messagingSenderId: "1005022180919"
+  };
+
+  const appRoutes: Routes = [
+    { path: 'newpost', component: NewpostComponent },
+
+  ];
+>>>>>>> f48b821063d3f5dafa72f51069720984b61976e4
 
 
 @NgModule({
@@ -47,7 +68,15 @@ import { EditContactDetailsComponent } from './components/edit-contact-details/e
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    FormsModule,
+    AngularFireModule,
+    AngularFireModule.initializeApp(config),
+    AngularFireDatabaseModule,
+    RouterModule.forRoot(
+      appRoutes,
+      { enableTracing: true } 
+    )
   ],
   providers: [],
   bootstrap: [AppComponent]
