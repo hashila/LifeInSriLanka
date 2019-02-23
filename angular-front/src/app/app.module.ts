@@ -4,7 +4,7 @@ import { FormsModule } from '@angular/forms';
 
 import { AngularFireModule } from 'angularfire2';
 import { AngularFireDatabaseModule } from 'angularfire2/database';
-import { RouterModule, Routes } from '@angular/router';
+
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -25,10 +25,6 @@ import { EditPackagesComponent } from './components/edit-packages/edit-packages.
 import { ShowCustomerDetailsComponent } from './components/show-customer-details/show-customer-details.component';
 import { EditContactDetailsComponent } from './components/edit-contact-details/edit-contact-details.component';
 
-<<<<<<< HEAD
-
-
-=======
 const config = {
     apiKey: "AIzaSyDBmn0NC7Qk1veMs0xlH2f8OmWT0MolciI",
     authDomain: "lifeinsrilanka-4b91f.firebaseapp.com",
@@ -38,11 +34,7 @@ const config = {
     messagingSenderId: "1005022180919"
   };
 
-  const appRoutes: Routes = [
-    { path: 'newpost', component: NewpostComponent },
-
-  ];
->>>>>>> f48b821063d3f5dafa72f51069720984b61976e4
+  
 
 
 @NgModule({
@@ -73,10 +65,7 @@ const config = {
     AngularFireModule,
     AngularFireModule.initializeApp(config),
     AngularFireDatabaseModule,
-    RouterModule.forRoot(
-      appRoutes,
-      { enableTracing: true } 
-    )
+    
   ],
   providers: [],
   bootstrap: [AppComponent]
