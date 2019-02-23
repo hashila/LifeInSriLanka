@@ -20,6 +20,10 @@ import { EditPackagesComponent } from './components/edit-packages/edit-packages.
 import { ShowCustomerDetailsComponent } from './components/show-customer-details/show-customer-details.component';
 import { EditContactDetailsComponent } from './components/edit-contact-details/edit-contact-details.component';
 
+
+
+
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -38,7 +42,8 @@ import { EditContactDetailsComponent } from './components/edit-contact-details/e
     EditCharityPageComponent,
     EditPackagesComponent,
     ShowCustomerDetailsComponent,
-    EditContactDetailsComponent
+    EditContactDetailsComponent,
+   
   ],
   imports: [
     BrowserModule,
