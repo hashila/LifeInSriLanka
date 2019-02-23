@@ -18,10 +18,10 @@ export class NewpostComponent implements OnInit {
 
   submitfunc(){
 
-    this.db.list('/newpost/'+this.titletxt).push({
+    this.db.list('/newpost/').push({
 
-      Titletxt: this.titletxt,
-      bosytxt: this.bodytxt
+      titletxt: this.titletxt,
+      bodytxt: this.bodytxt
 
 
     });
