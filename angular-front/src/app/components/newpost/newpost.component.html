@@ -7,7 +7,11 @@
   </div>
 
 <div class="form-group col-sm-7">
-      <label for="exampleFormControlTextarea1">Body</label>
+      <label for="exampleFormControlTextarea1">half of the content</label>
+      <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" name="half" [(ngModel)]="half"></textarea>
+</div>
+<div class="form-group col-sm-7">
+      <label for="exampleFormControlTextarea1">more</label>
       <textarea class="form-control" id="exampleFormControlTextarea1" rows="6" name="bodytxt" [(ngModel)]="bodytxt"></textarea>
 </div>
 <button type="button" class="btn btn-success col-sm-7" (click)="submitfunc()">Publish</button>

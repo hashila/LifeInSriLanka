@@ -13,7 +13,7 @@ export class ShowCustomerDetailsComponent implements OnInit {
 
   constructor(afd :AngularFireDatabase) {
 
-    this.users = afd.list('/userMessages/').valueChanges();
+    this.users = afd.list('/userReq/').valueChanges();
     console.log(this.users);
 
   }

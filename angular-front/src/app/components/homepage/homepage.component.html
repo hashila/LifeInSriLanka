@@ -1,4 +1,4 @@
-<div class="bg">
+
 <!-- <div class="view" style="background-image: url('/assets/images/back5.jpg'); background-repeat: no-repeat; background-size:cover;; background-position: center center;"> -->
 <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
     <ol class="carousel-indicators">
@@ -28,42 +28,7 @@
   </div>
 
 
-  <section class="featured-blog mtb-40">
-    <div class="container">
-      <div class="row">
-        <div class="col-md-4">
-          <div class="blog-box">
-            <img src="../assets/images/as.jpg" alt="blog1" />
-            <h3>Sample blog post 1</h3>
-            <p>by <span>RSGiTECH</span> on <span>October 22, 2018</span></p>
-            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. </p>
-            <a href="detail.html" class="btn btn-danger">Read more...</a>
-          </div>
-        </div>
-        <div class="col-md-4">
-          <div class="blog-box">
-            <img src="../assets/images/as.jpg" alt="blog1" />
-            <h3>Sample blog post 2</h3>
-            <p>by <span>RSGiTECH</span> on <span>October 22, 2018</span></p>
-            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. </p>
-            <a href="detail.html" class="btn btn-danger">Read more...</a>
-          </div>
-        </div>
-        <div class="col-md-4">
-          <div class="blog-box">
-            <img src="../assets/images/as.jpg" alt="blog1" />
-            <h3>Sample blog post 3</h3>
-            <p>by <span>RSGiTECH</span> on <span>October 22, 2018</span></p>
-            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. </p>
-            <a href="detail.html" class="btn btn-danger">Read more...</a>
-          </div>
-        </div>
 
-
-
-      </div>
-    </div>
-  </section>
 
 
 
@@ -82,27 +47,23 @@
 
 
       <div class="jumbotron">
-        <h2 class="display-3">{{user.titletxt }}</h2>
-        <p class="lead">{{user.bodytxt}}</p>
+
+        <div class="row">
+          <div class="span4 collapse-group">
+            <h2 class="display-3">{{user.titletxt}}</h2>
+              <p>{{user.half}}<span class="collapse" id="viewdetails3">{{user.bodytxt}} </span> <a data-toggle="collapse" data-target="#viewdetails3"><p class="text-success">More...</p>&raquo;</a></p>
+          </div>
+        </div>
+
         <hr class="my-4">
+
+
+
+
+
+
 
       </div>
     </div>
     </li>
     </ul>
-    <body>
-
-    <div class="bg"></div>
-
-    <p class="py-5 text-center">This example creates a full page background image. Try to resize the browser window to see how it always will cover the full screen (when scrolled to top), and that it scales nicely on all screen sizes.</p>
-    <div class="container">
-    <!-- Container --><div class="bs-example">
-    <div class="row">
-      <div class="span4 collapse-group">
-        <h2>Heading</h2>
-          <p>You need to keep your enterprise secure, and you want to do it on your terms. <span class="collapse" id="viewdetails3"> Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </span> <a data-toggle="collapse" data-target="#viewdetails3">More... &raquo;</a></p>
-      </div>
-    </div>
-    </div>
-
-    </div>
