@@ -4,7 +4,7 @@ import { FormsModule } from '@angular/forms';
 
 import { AngularFireModule } from 'angularfire2';
 import { AngularFireDatabaseModule } from 'angularfire2/database';
-
+import { FlashMessagesModule } from 'angular2-flash-messages';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -67,6 +67,8 @@ const config = {
     AngularFireModule,
     AngularFireModule.initializeApp(config),
     AngularFireDatabaseModule,
+    FlashMessagesModule.forRoot()
+
 
   ],
   providers: [],

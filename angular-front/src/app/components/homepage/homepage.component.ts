@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { AngularFireDatabase } from 'angularfire2/database';
-import { Observable } from 'rxjs/Observable';
+import { Observable, of } from 'rxjs';
 
 
 
@@ -17,7 +17,7 @@ export class HomepageComponent implements OnInit {
   constructor(afd :AngularFireDatabase) {
 
     this.users = afd.list('/newpost/').valueChanges();
-    console.log(this.users.titletxt);
+    console.log(this.users);
    }
 
   ngOnInit() {
