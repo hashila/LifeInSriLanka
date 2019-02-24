@@ -24,6 +24,7 @@ import { EditCharityPageComponent } from './components/edit-charity-page/edit-ch
 import { EditPackagesComponent } from './components/edit-packages/edit-packages.component';
 import { ShowCustomerDetailsComponent } from './components/show-customer-details/show-customer-details.component';
 import { EditContactDetailsComponent } from './components/edit-contact-details/edit-contact-details.component';
+import { FormComponent } from './components/packagespage/form/form.component';
 
 const config = {
     apiKey: "AIzaSyDBmn0NC7Qk1veMs0xlH2f8OmWT0MolciI",
@@ -56,6 +57,7 @@ const config = {
     EditPackagesComponent,
     ShowCustomerDetailsComponent,
     EditContactDetailsComponent,
+    FormComponent,
    
   ],
   imports: [
