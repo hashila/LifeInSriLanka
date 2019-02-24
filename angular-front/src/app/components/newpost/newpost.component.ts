@@ -23,7 +23,6 @@ export class NewpostComponent implements OnInit {
       titletxt: this.titletxt,
       bodytxt: this.bodytxt
 
-
     });
   }
 

@@ -2,6 +2,9 @@ import { Component, OnInit } from '@angular/core';
 import { AngularFireDatabase } from 'angularfire2/database';
 import { Observable } from 'rxjs/Observable';
 
+
+
+
 @Component({
   selector: 'app-homepage',
   templateUrl: './homepage.component.html',
@@ -14,7 +17,7 @@ export class HomepageComponent implements OnInit {
   constructor(afd :AngularFireDatabase) {
 
     this.users = afd.list('/newpost/').valueChanges();
-    console.log(this.users);
+    console.log(this.users.titletxt);
    }
 
   ngOnInit() {

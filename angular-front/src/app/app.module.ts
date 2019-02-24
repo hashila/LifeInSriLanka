@@ -24,6 +24,7 @@ import { EditCharityPageComponent } from './components/edit-charity-page/edit-ch
 import { EditPackagesComponent } from './components/edit-packages/edit-packages.component';
 import { ShowCustomerDetailsComponent } from './components/show-customer-details/show-customer-details.component';
 import { EditContactDetailsComponent } from './components/edit-contact-details/edit-contact-details.component';
+import { FormComponent } from './components/packagespage/form/form.component';
 
 const config = {
     apiKey: "AIzaSyDBmn0NC7Qk1veMs0xlH2f8OmWT0MolciI",
@@ -34,7 +35,7 @@ const config = {
     messagingSenderId: "1005022180919"
   };
 
-  
+
 
 
 @NgModule({
@@ -56,7 +57,8 @@ const config = {
     EditPackagesComponent,
     ShowCustomerDetailsComponent,
     EditContactDetailsComponent,
-   
+    FormComponent,
+
   ],
   imports: [
     BrowserModule,
@@ -65,7 +67,7 @@ const config = {
     AngularFireModule,
     AngularFireModule.initializeApp(config),
     AngularFireDatabaseModule,
-    
+
   ],
   providers: [],
   bootstrap: [AppComponent]
