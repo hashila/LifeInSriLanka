@@ -1,55 +1,46 @@
-html,
-body,
-header,
-.view {
+.hero{
+  background-image: url("/assets/images/red-blue-abstraction-wallpapers-55626-5305602.jpg");
+
+  /* Full height */
   height: 100%;
+
+  /* Center and scale the image nicely */
+  background-position: 0 60% ;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
-@media (max-width: 740px) {
-  html,
-  body,
-  header,
-  .view {
-    height: 1000px;
-  }
-}
-@media (min-width: 800px) and (max-width: 850px) {
-  html,
-  body,
-  header,
-  .view {
-    height: 650px;
-  }
-}
+.navbar {
+    width:100%;
+    background:none !important;
 
-.top-nav-collapse {
-  background-color: #3f51b5 !important;
-}
+    @media(max-width: 40em) {
+        background: black !important;
+    }
 
-.navbar:not(.top-nav-collapse) {
-  background: transparent !important;
-}
+    .navbar-toggler {
+        cursor:pointer;
+        outline:0;
+    }
 
-@media (max-width: 991px) {
-  .navbar:not(.top-nav-collapse) {
-    background: #3f51b5 !important;
-  }
-}
+    .nav-link {
+        text-transform:uppercase;
+        font-weight:bold;
+    }
 
-.rgba-gradient {
-  background: -webkit-linear-gradient(45deg, rgba(0, 0, 0, 0.7), rgba(72, 15, 144, 0.4) 100%);
-  background: -webkit-gradient(linear, 45deg, from(rgba(0, 0, 0, 0.7), rgba(72, 15, 144, 0.4) 100%)));
-  background: linear-gradient(to 45deg, rgba(0, 0, 0, 0.7), rgba(72, 15, 144, 0.4) 100%);
-}
+    .nav-item {
+        padding: 0 1rem;
+        color: #CC0000;
 
-.card {
-  background-color: rgba(126, 123, 215, 0.2);
-}
+        @media(max-width: 40em) {
+            padding: 0;
+        }
 
-.md-form label {
-  color: #ffffff;
-}
-
-h6 {
-  line-height: 1.7;
+        .nav-link {
+            @media(max-width: 50em) {
+                font-weight:normal;
+                color:#00000 !important;
+            }
+        }
+    }
 }

@@ -58,7 +58,6 @@ const config = {
     ShowCustomerDetailsComponent,
     EditContactDetailsComponent,
     FormComponent,
-
   ],
   imports: [
     BrowserModule,
