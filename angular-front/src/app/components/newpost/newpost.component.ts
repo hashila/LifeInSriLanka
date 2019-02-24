@@ -10,6 +10,7 @@ export class NewpostComponent implements OnInit {
 
   titletxt:string;
   bodytxt:string;
+  half:string;
 
   constructor(public db: AngularFireDatabase) { }
 
@@ -21,6 +22,7 @@ export class NewpostComponent implements OnInit {
     this.db.list('/newpost/').push({
 
       titletxt: this.titletxt,
+      half: this.half,
       bodytxt: this.bodytxt
 
     });
