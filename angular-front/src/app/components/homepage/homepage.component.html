@@ -1,4 +1,5 @@
-<body class="black-skin">
+<div class="bg">
+<!-- <div class="view" style="background-image: url('/assets/images/back5.jpg'); background-repeat: no-repeat; background-size:cover;; background-position: center center;"> -->
 <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
     <ol class="carousel-indicators">
       <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
@@ -63,25 +64,45 @@
       </div>
     </div>
   </section>
-  <!--Grid row-->
-<!-- <div class="row"> -->
 
-    <!--Grid column-->
+
+
+
+
+
+
+
+
+
+
     <ul style="list-style: none;">
 
-    <li *ngFor="let user of users | async">
+    <li *ngFor="let user of users | async; let i=index;">
+      <div *ngIf="i<3">
+
 
       <div class="jumbotron">
         <h2 class="display-3">{{user.titletxt }}</h2>
         <p class="lead">{{user.bodytxt}}</p>
         <hr class="my-4">
 
-        <p class="lead">
-          <a class="btn btn-primary btn-lg bg-dark" href="#" role="button">Learn more</a>
-        </p>
       </div>
-
+    </div>
     </li>
     </ul>
+    <body>
 
-  <!-- </div> -->
+    <div class="bg"></div>
+
+    <p class="py-5 text-center">This example creates a full page background image. Try to resize the browser window to see how it always will cover the full screen (when scrolled to top), and that it scales nicely on all screen sizes.</p>
+    <div class="container">
+    <!-- Container --><div class="bs-example">
+    <div class="row">
+      <div class="span4 collapse-group">
+        <h2>Heading</h2>
+          <p>You need to keep your enterprise secure, and you want to do it on your terms. <span class="collapse" id="viewdetails3"> Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </span> <a data-toggle="collapse" data-target="#viewdetails3">More... &raquo;</a></p>
+      </div>
+    </div>
+    </div>
+
+    </div>

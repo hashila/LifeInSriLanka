@@ -35,7 +35,7 @@ const config = {
     messagingSenderId: "1005022180919"
   };
 
-  
+
 
 
 @NgModule({
@@ -58,7 +58,6 @@ const config = {
     ShowCustomerDetailsComponent,
     EditContactDetailsComponent,
     FormComponent,
-   
   ],
   imports: [
     BrowserModule,
@@ -67,7 +66,7 @@ const config = {
     AngularFireModule,
     AngularFireModule.initializeApp(config),
     AngularFireDatabaseModule,
-    
+
   ],
   providers: [],
   bootstrap: [AppComponent]
