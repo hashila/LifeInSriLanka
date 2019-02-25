@@ -1,6 +1,15 @@
 import { Component, OnInit } from '@angular/core';
 import { AngularFireDatabase } from 'angularfire2/database';
+<<<<<<< HEAD
 import { Observable ,of} from 'rxjs';
+=======
+
+
+import { Observable, of } from 'rxjs';
+
+
+
+>>>>>>> 707dfd8f2ca2ecc18d68a40fc8e7c885a26cc064
 
 
 @Component({
