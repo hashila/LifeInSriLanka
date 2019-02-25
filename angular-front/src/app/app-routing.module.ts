@@ -6,6 +6,8 @@ import { PackagespageComponent } from './components/packagespage/packagespage.co
 import { CharitypageComponent } from './components/charitypage/charitypage.component';
 import { AboutuspageComponent } from './components/aboutuspage/aboutuspage.component';
 import { NewpostComponent } from './components/newpost/newpost.component';
+import { EditContactDetailsComponent } from './components/edit-contact-details/edit-contact-details.component';
+import { ShowCustomerDetailsComponent } from './components/show-customer-details/show-customer-details.component';
 const routes: Routes = [
   { path: '', component: HomepageComponent},
   { path: 'documentationpage',  component: DocumentationpageComponent },
@@ -13,7 +15,9 @@ const routes: Routes = [
   { path: 'charitypage', component:  CharitypageComponent },
   { path: 'aboutuspage', component:  AboutuspageComponent },
   { path: 'newpost', component: NewpostComponent },
-  
+  { path: 'editcontact', component: EditContactDetailsComponent },
+
+{ path: 'ShowCustomerDetails', component: ShowCustomerDetailsComponent },
 ];
 
 @NgModule({
