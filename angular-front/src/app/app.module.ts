@@ -25,6 +25,7 @@ import { EditPackagesComponent } from './components/edit-packages/edit-packages.
 import { ShowCustomerDetailsComponent } from './components/show-customer-details/show-customer-details.component';
 import { EditContactDetailsComponent } from './components/edit-contact-details/edit-contact-details.component';
 import { FormComponent } from './components/packagespage/form/form.component';
+import { AdminloginComponent } from './components/adminlogin/adminlogin.component';
 
 const config = {
     apiKey: "AIzaSyDBmn0NC7Qk1veMs0xlH2f8OmWT0MolciI",
@@ -58,6 +59,7 @@ const config = {
     ShowCustomerDetailsComponent,
     EditContactDetailsComponent,
     FormComponent,
+    AdminloginComponent,
   ],
   imports: [
     BrowserModule,

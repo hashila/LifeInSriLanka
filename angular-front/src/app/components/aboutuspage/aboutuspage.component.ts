@@ -1,4 +1,9 @@
 import { Component, OnInit } from '@angular/core';
+import { AngularFireDatabase } from 'angularfire2/database';
+
+
+import { Observable, of } from 'rxjs';
+
 
 @Component({
   selector: 'app-aboutuspage',
@@ -7,7 +12,13 @@ import { Component, OnInit } from '@angular/core';
 })
 export class AboutuspageComponent implements OnInit {
 
-  constructor() { }
+users :Observable<any>;
+
+  constructor(afd :AngularFireDatabase) {
+
+      this.users = afd.list('/contactus/').valueChanges();
+
+  }
 
   ngOnInit() {
   }

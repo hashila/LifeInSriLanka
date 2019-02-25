@@ -6,8 +6,13 @@ import { PackagespageComponent } from './components/packagespage/packagespage.co
 import { CharitypageComponent } from './components/charitypage/charitypage.component';
 import { AboutuspageComponent } from './components/aboutuspage/aboutuspage.component';
 import { NewpostComponent } from './components/newpost/newpost.component';
+<<<<<<< HEAD
 import { EditContactDetailsComponent } from './components/edit-contact-details/edit-contact-details.component';
 import { ShowCustomerDetailsComponent } from './components/show-customer-details/show-customer-details.component';
+=======
+import { DashboardComponent } from './components/dashboard/dashboard.component';
+
+>>>>>>> 92c23d4e6a25681960a7b8bd6546a70be8709417
 const routes: Routes = [
   { path: '', component: HomepageComponent},
   { path: 'documentationpage',  component: DocumentationpageComponent },
@@ -15,9 +20,14 @@ const routes: Routes = [
   { path: 'charitypage', component:  CharitypageComponent },
   { path: 'aboutuspage', component:  AboutuspageComponent },
   { path: 'newpost', component: NewpostComponent },
+<<<<<<< HEAD
   { path: 'editcontact', component: EditContactDetailsComponent },
 
 { path: 'ShowCustomerDetails', component: ShowCustomerDetailsComponent },
+=======
+  { path: 'dashboard', component: DashboardComponent },
+
+>>>>>>> 92c23d4e6a25681960a7b8bd6546a70be8709417
 ];
 
 @NgModule({

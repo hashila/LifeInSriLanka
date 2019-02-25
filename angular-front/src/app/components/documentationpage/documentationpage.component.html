@@ -7,7 +7,7 @@
 </p>
 <div class="container">
   <div class="row">
-    <div class="col-sm">
+    <div class="col-lg">
 
 
 <ul class="list-unstyled">
@@ -16,11 +16,19 @@
 
 
  <div class="card card-cascade">
-    <div class="card text-white bg-secondary mb-3" style="max-width: 20rem;" id="cards">
-      <div class="card-header">{{user.titletxt }}</div>
+    <div class="card text-white bg-secondary mb-3"  id="cards">
+      <!-- <div class="card-header">{{user.titletxt }}</div> -->
       <div class="card-body">
 
-        <p class="card-text">{{user.bodytxt}}</p>
+
+
+        <div class="span4 collapse-group">
+          <h2 class="display-3">{{user.titletxt}}</h2>
+            <p>{{user.half}}<span class="collapse" id="viewdetails3">{{user.bodytxt}} </span> <a data-toggle="collapse" data-target="#viewdetails3"><p class="text-info"><b>Read More...</b></p>&raquo;</a></p>
+        </div>
+
+
+
       </div>
     </div>
   </div>
