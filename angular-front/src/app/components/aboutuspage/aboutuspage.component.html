@@ -55,7 +55,7 @@
                 <div class="well">
                     <h4>Quick Links</h4>
                     <div class="row">
-                        
+
                         <div class="col-lg-6">
                             <ul class="list-unstyled">
                                 <li><a href="https://www.facebook.com/"><i id="social-fb" class="fa fa-facebook-square fa-3x social">www.facebook.com</i></a>
@@ -82,3 +82,72 @@
 
         </div>
 </div>
+
+
+
+
+
+<ul style="list-style: none;">
+
+<li *ngFor="let user of users | async; let i=index;">
+
+
+  <div class="card">
+  <div class="card-header">
+    <b><h4>{{user.name}}</h4></b>
+  </div>
+  <div class="card-body">
+    <h5 class="card-title">Contact Details of {{user.name}}</h5>
+    <p class="card-text"></p>
+
+
+
+    <table class="table">
+
+      <tbody>
+        <tr>
+
+          <td><b>E-mail :</b></td>
+          <td>{{user.email}}</td>
+        </tr>
+        <tr>
+
+          <td><b>Address :</b></td>
+          <td>{{user.address}}</td>
+        </tr>
+        <tr>
+
+          <td><b>Phone Number :</b></td>
+          <td>{{user.phonenum}}</td>
+        </tr>
+        <tr>
+          <h4>Social media Links</h4>
+        </tr>
+
+        <tr>
+
+          <td><b>Facebook :</b></td>
+          <td>{{user.facebook}}</td>
+        </tr>
+        <tr>
+
+          <td><b>Twitter :</b></td>
+          <td>{{user.twitter}}</td>
+        </tr>
+        <tr>
+
+          <td><b>Instagram :</b></td>
+          <td>{{user.instagram}}</td>
+        </tr>
+      </tbody>
+    </table>
+
+
+
+  </div>
+</div>
+
+
+
+</li>
+</ul>

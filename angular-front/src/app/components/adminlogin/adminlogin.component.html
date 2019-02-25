@@ -1,0 +1,18 @@
+<flash-messages></flash-messages>
+
+
+<form class="col-sm">
+  <div class="form-group">
+    <label for="exampleInputEmail1">User Name</label>
+    <input type="text" class="form-control" id="exampleInputEmail1"  placeholder="User Name" name="username" [(ngModel)]="username">
+
+  </div>
+  <div class="form-group">
+    <label for="exampleInputPassword1">Password</label>
+    <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password" name="password" [(ngModel)]="password">
+  </div>
+  <div class="form-check">
+
+  </div>
+  <button type="submit" class="btn btn-primary" (click)="login()">Login</button>
+</form>

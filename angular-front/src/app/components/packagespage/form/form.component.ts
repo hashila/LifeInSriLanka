@@ -13,6 +13,8 @@ export class FormComponent implements OnInit {
   emailtxt:string;
   contacttxt:string;
   msgtxt:string;
+  select:string;
+
 
 
   constructor(public db: AngularFireDatabase,public flash:FlashMessagesService) {
@@ -30,7 +32,8 @@ export class FormComponent implements OnInit {
           name: this.nametxt,
           email: this.emailtxt,
           contact: this.contacttxt,
-          message: this.msgtxt
+          message: this.msgtxt,
+          select: this.select
 
         });
         this.flash.show('Successfully added to the database', { cssClass: 'alert-success', timeout: 5000 });

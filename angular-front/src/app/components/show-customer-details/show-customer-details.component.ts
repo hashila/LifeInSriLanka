@@ -10,10 +10,12 @@ import { Observable, of } from 'rxjs';
 export class ShowCustomerDetailsComponent implements OnInit {
 
   users :Observable<any>;
+  charitys :Observable<any>;
 
   constructor(afd :AngularFireDatabase) {
 
     this.users = afd.list('/userReq/').valueChanges();
+    this.charitys = afd.list('/charityreq/').valueChanges();
     console.log(this.users);
 
   }
