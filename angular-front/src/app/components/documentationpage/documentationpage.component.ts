@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { AngularFireDatabase } from 'angularfire2/database';
+import { Observable, of } from 'rxjs';
 
 @Component({
   selector: 'app-documentationpage',
@@ -6,8 +8,13 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./documentationpage.component.css']
 })
 export class DocumentationpageComponent implements OnInit {
+users :Observable<any>;
+  constructor(afd :AngularFireDatabase) {
 
-  constructor() { }
+    this.users = afd.list('/newpost/').valueChanges();
+    console.log(this.users);
+
+   }
 
   ngOnInit() {
   }

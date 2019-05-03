@@ -1,3 +1,93 @@
-<p>
-  homepage works!
-</p>
+<app-navbar></app-navbar>
+
+
+<div class="bg">
+<div class="container">
+      <div class="carousel" id="slide" data-ride="carousel">
+        <ol class="carousel-indicators">
+          <li data-target="#slide" data-slide-to="0" class="active"></li>
+          <li data-target="#slide" data-slide-to="1"></li>
+          <li data-target="#slide" data-slide-to="2"></li>
+          <li data-target="#slide" data-slide-to="3"></li>
+        </ol>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="/assets/images/1..jpg" class="img-fluid">
+            <div class="carousel-caption">
+              <h3>Village Life</h3>
+              <p>The people living in Sri Lankan rural villages are generally curious over foreign visitors, that’s why families are usually keen to talk to tourists and often invite them home for a cup of tea. </p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="/assets/images/3..jpg" class="img-fluid">
+          <div class="carousel-caption">
+              <h3>Lakes</h3>
+              <p>A lake (from Latin lacus) is a large body of water (larger and deeper than a pond) within a body of land. As a lake is separated from the ocean, it is not a sea. Some lakes are very big, and people in the past sometimes called them seas</p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="/assets/images/3.jpg" class="img-fluid">
+          <div class="carousel-caption">
+              <h3>Autumn</h3>
+              <p>Autumn, also known as fall in American and Canadian English, is one of the four temperate seasons. Autumn marks the transition from summer to winter, in September (Northern Hemisphere) or March (Southern Hemisphere), when the duration of daylight becomes noticeably shorter and the temperature cools down considerably.</p>
+            </div></div>
+          <div class="carousel-item"><img src="/assets/images/4.0.jpg" class="img-fluid">
+          <div class="carousel-caption">
+              <h3>Cloudes</h3>
+              <p>In meteorology, a cloud is an aerosol comprising a visible mass of minute liquid droplets, frozen crystals, or particles suspended in the atmosphere above the surface of a planetary body. The droplets and crystals may be made of water or various chemicals.</p>
+            </div></div>
+        </div>
+        <a href="#slide" class="carousel-control-prev" data-slide="prev">
+          <span class="carousel-control-prev-icon"></span>
+        </a>
+         <a href="#slide" class="carousel-control-next" data-slide="next">
+          <span class="carousel-control-next-icon"></span>
+        </a>
+      </div>
+    </div>
+    </div>
+    <div class="bg">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <ul style="list-style: none;">
+
+    <li *ngFor="let user of users | async; let i=index;">
+      <div *ngIf="i<3">
+
+
+      <div class="jumbotron">
+
+        <div class="row">
+          <div class="span4 collapse-group">
+            <h2 class="display-3">{{user.titletxt}}</h2>
+              <p>{{user.half}}<span class="collapse" id="viewdetails3">{{user.bodytxt}} </span> <a data-toggle="collapse" data-target="#viewdetails3"><p class="text-success">More...</p>&raquo;</a></p>
+          </div>
+        </div>
+
+        <hr class="my-4">
+
+
+
+
+
+
+</div>
+      </div>
+
+    </li>
+    </ul>
+    </div>
+<app-footer></app-footer>

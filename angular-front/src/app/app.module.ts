@@ -1,5 +1,10 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
+import { FormsModule } from '@angular/forms';
+
+import { AngularFireModule } from 'angularfire2';
+import { AngularFireDatabaseModule } from 'angularfire2/database';
+import { FlashMessagesModule } from 'angular2-flash-messages';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -19,6 +24,20 @@ import { EditCharityPageComponent } from './components/edit-charity-page/edit-ch
 import { EditPackagesComponent } from './components/edit-packages/edit-packages.component';
 import { ShowCustomerDetailsComponent } from './components/show-customer-details/show-customer-details.component';
 import { EditContactDetailsComponent } from './components/edit-contact-details/edit-contact-details.component';
+import { FormComponent } from './components/packagespage/form/form.component';
+import { AdminloginComponent } from './components/adminlogin/adminlogin.component';
+
+const config = {
+    apiKey: "AIzaSyDBmn0NC7Qk1veMs0xlH2f8OmWT0MolciI",
+    authDomain: "lifeinsrilanka-4b91f.firebaseapp.com",
+    databaseURL: "https://lifeinsrilanka-4b91f.firebaseio.com",
+    projectId: "lifeinsrilanka-4b91f",
+    storageBucket: "lifeinsrilanka-4b91f.appspot.com",
+    messagingSenderId: "1005022180919"
+  };
+
+
+
 
 @NgModule({
   declarations: [
@@ -38,11 +57,20 @@ import { EditContactDetailsComponent } from './components/edit-contact-details/e
     EditCharityPageComponent,
     EditPackagesComponent,
     ShowCustomerDetailsComponent,
-    EditContactDetailsComponent
+    EditContactDetailsComponent,
+    FormComponent,
+    AdminloginComponent,
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    FormsModule,
+    AngularFireModule,
+    AngularFireModule.initializeApp(config),
+    AngularFireDatabaseModule,
+    FlashMessagesModule.forRoot()
+
+
   ],
   providers: [],
   bootstrap: [AppComponent]

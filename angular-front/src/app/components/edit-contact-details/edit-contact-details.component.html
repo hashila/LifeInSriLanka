@@ -1,3 +1,46 @@
-<p>
-  edit-contact-details works!
-</p>
+<app-dashboard></app-dashboard>
+<flash-messages></flash-messages>
+
+
+
+
+<div id = "contactdetails">
+
+  <h2 class="text-success"> Add New Contact Detail</h2>
+  <p class="text-primary"><span> if you want to update any contact detail please go to the firebase console or contact the developer</span></p>
+
+
+<div class="form-group col-sm-7">
+    <label for="formGroupExampleInput">Name</label>
+    <input type="text" class="form-control" id="formGroupExampleInput" name="nametxt" [(ngModel)]="nametxt">
+  </div>
+<div class="form-group col-sm-7">
+    <label for="formGroupExampleInput">Phone</label>
+    <input type="text" class="form-control" id="formGroupExampleInput" name="phonetxt" [(ngModel)]="phonetxt">
+  </div>
+
+<div class="form-group col-sm-7">
+    <label for="exampleFormControlInput1">Email address</label>
+    <input type="email" class="form-control" id="exampleFormControlInput1" name="emailtxt" [(ngModel)]="emailtxt">
+</div>
+<div class="form-group col-sm-7">
+      <label for="exampleFormControlTextarea1">Address</label>
+      <textarea class="form-control" id="exampleFormControlTextarea1" rows="2" name="addresstxt" [(ngModel)]="addresstxt"></textarea>
+</div>
+<label for="exampleFormControlInput1"><h5>Social Media Links</h5></label>
+<div class="form-group col-sm-7">
+    <label for="exampleFormControlInput1">Facebook</label>
+    <input type="text" class="form-control" id="exampleFormControlInput1" name="facebook" [(ngModel)]="facebook">
+</div>
+<div class="form-group col-sm-7">
+    <label for="exampleFormControlInput1">Twitter</label>
+    <input type="text" class="form-control" id="exampleFormControlInput1" name="twitter" [(ngModel)]="twitter">
+</div>
+<div class="form-group col-sm-7">
+    <label for="exampleFormControlInput1">Instagram</label>
+    <input type="text" class="form-control" id="exampleFormControlInput1" name="insta" [(ngModel)]="insta">
+</div>
+
+<button type="button" class="btn btn-success col-sm-7" (click)="submitfunc()">Submit</button>
+
+</div>

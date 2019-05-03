@@ -1,3 +1,51 @@
+ <app-navbar></app-navbar>
+<div class="bg">
+<br>
+
 <p>
-  documentationpage works!
+  <br>
 </p>
+<div class="container">
+  <div class="row">
+    <div class="col-lg">
+
+
+<ul class="list-unstyled">
+      <ul style="list-style: none;">
+    <li *ngFor="let user of users | async">
+
+
+ <div class="card card-cascade">
+    <div class="card text-white bg-secondary mb-3"  id="cards">
+      <!-- <div class="card-header">{{user.titletxt }}</div> -->
+      <div class="card-body">
+
+
+
+        <div class="span4 collapse-group">
+          <h2 class="display-3">{{user.titletxt}}</h2>
+            <p>{{user.half}}<span class="collapse" id="viewdetails3">{{user.bodytxt}} </span> <a data-toggle="collapse" data-target="#viewdetails3"><p class="text-info"><b>Read More...</b></p>&raquo;</a></p>
+        </div>
+
+
+
+      </div>
+    </div>
+  </div>
+
+
+    </li>
+  </ul>
+    </ul>
+
+
+
+
+
+
+    </div>
+
+  </div>
+</div>
+</div>
+<app-footer></app-footer>
